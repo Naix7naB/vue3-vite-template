@@ -1,6 +1,6 @@
 /**
  * @description custom commit scope | 自定义提交范围
- * @returns {Array<{name: string, value: string}>}
+ * @returns {Array<{name: string, value: string}>} 返回scope数组
  */
 function getCustomScopes() {
     return [
@@ -40,7 +40,7 @@ export default {
             'test',
             'docs',
             'release',
-            'init',
+            'init'
         ]]
     },
     prompt: {
@@ -67,7 +67,7 @@ export default {
             { value: 'test', name: '✅  Tests | 测试', emoji: ':white_check_mark:' },
             { value: 'docs', name: '📝  Documentation | 文档变更', emoji: ':memo:' },
             { value: 'release', name: '🔖  Release | 发布版本', emoji: ':bookmark:' },
-            { value: 'init', name: '🎉  Init | 初始化', emoji: ':tada:' },
+            { value: 'init', name: '🎉  Init | 初始化', emoji: ':tada:' }
         ],
         scopes: getCustomScopes(),
         skipQuestions: ['footerPrefix', 'footer'], // 忽略的步骤
