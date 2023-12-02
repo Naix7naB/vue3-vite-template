@@ -1,0 +1,37 @@
+{
+    "author": "Naix7naB",
+    "name": "vue3-vite-template",
+    "version": "1.0.0",
+    "license": "ISC",
+    "description": "based on vue3+vite+husky+commitlint+commitizen+eslint+lint-staged template",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "commit": "npx git-cz",
+        "lint:staged": "lint-staged",
+        "prepare": "husky install"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/cz-git"
+        }
+    },
+    "devDependencies": {
+        "commitizen": "^4.3.0",
+        "commitlint": "^18.4.3",
+        "cz-git": "^1.7.1",
+        "eslint": "^8.54.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^15.1.0"
+    },
+    "keywords": [
+        "vue3",
+        "vite",
+        "husky",
+        "commitlint",
+        "commitizen",
+        "eslint",
+        "lint-staged",
+        "template"
+    ]
+}
