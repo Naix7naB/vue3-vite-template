@@ -19,7 +19,7 @@ function getCustomScopes() {
 }
 
 /** @type {import('cz-git').UserConfig} */
-module.exports = {
+export default {
     extends: ['gitmoji'],
     rules: {
         'body-leading-blank': [1, 'always'],

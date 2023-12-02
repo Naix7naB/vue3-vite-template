@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "license": "ISC",
     "description": "based on vue3+vite+husky+commitlint+commitizen+eslint+lint-staged template",
+    "type": "module",
     "main": "main.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
