@@ -1,10 +1,10 @@
 # vue3-vite-template
 
-> [!IMPORTANT]
-> 基于 vue3+vite+pinia+husky+commitlint+commitizen+eslint+lint-staged 的开发模板
-> 其中使用的ESLint配置是最新的[ESLint Flat Config](https://eslint.org/docs/latest/use/configure/configuration-files-new)
+> 基于 vue3+vite+pinia+unocss 的开发模板.
+>
+> 用 husky+commitlint+commitizen+eslint+lint-staged 规范编码风格以及提交信息.
 
-## 依赖
+## 项目依赖
 
 - **开发类**
     - [vue3](https://vuejs.org/)
@@ -22,3 +22,16 @@
     - [@antfu/eslint-config](https://github.com/antfu/eslint-config) (可选)
     - [lint-staged](https://github.com/lint-staged/lint-staged)
 
+## 使用
+
+### 安装
+
+拉取项目到本地
+```bash
+git clone https://github.com/Naix7naB/vue3-vite-template.git
+```
+
+安装项目依赖
+```bash
+pnpm install
+```
