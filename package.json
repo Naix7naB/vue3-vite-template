@@ -19,7 +19,6 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "commit": "npx git-cz",
-        "lint:staged": "lint-staged",
         "prepare": "husky install"
     },
     "config": {
@@ -36,5 +35,8 @@
         "eslint": "^8.54.0",
         "husky": "^8.0.3",
         "lint-staged": "^15.1.0"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,json,vue,css,scss,html,md}": "eslint --fix"
     }
 }
