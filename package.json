@@ -42,8 +42,10 @@
         "eslint": "^8.54.0",
         "husky": "^8.0.3",
         "lint-staged": "^15.1.0",
+        "rollup-plugin-visualizer": "^5.10.0",
         "unocss": "^0.58.0",
-        "vite": "^5.0.4"
+        "vite": "^5.0.4",
+        "vite-plugin-compression": "^0.5.1"
     },
     "lint-staged": {
         "*.{js,jsx,ts,tsx,json,vue,css,scss,html,md}": "eslint --fix"
