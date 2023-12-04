@@ -9,12 +9,13 @@ export default await antfu({
     },
     rules: {
         'no-console': ['warn'],
+        'antfu/if-newline': ['off'],
         'node/prefer-global/process': ['error', 'always'],
         'style/arrow-parens': ['error', 'as-needed'],
         'style/brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
         'style/comma-dangle': ['error', 'never'],
         'style/eol-last': ['warn', 'always'],
-        'style/function-paren-newline': ['warn', { minItems: 7 }],
+        'style/function-paren-newline': ['warn', 'consistent'],
         'style/indent': ['error', 4]
     }
 })
