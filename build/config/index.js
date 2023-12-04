@@ -1,4 +1,5 @@
 const ASSETS_DIR = 'assets'
+const ENV_DIR = 'env'
 const OUTPUT_DIR = 'dist'
 const PUBLIC_DIR = 'public'
 
@@ -15,4 +16,4 @@ const PROXY_CONFIG = {
     }
 }
 
-export { ASSETS_DIR, OUTPUT_DIR, PUBLIC_DIR, PROXY_CONFIG }
+export { ASSETS_DIR, ENV_DIR, OUTPUT_DIR, PUBLIC_DIR, PROXY_CONFIG }
