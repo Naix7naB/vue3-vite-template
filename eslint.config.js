@@ -8,6 +8,8 @@ export default await antfu({
         quotes: 'single' // 使用单引号
     },
     rules: {
+        'no-console': ['warn'],
+        'node/prefer-global/process': ['error', 'always'],
         'style/arrow-parens': ['error', 'as-needed'],
         'style/brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
         'style/comma-dangle': ['error', 'never'],
