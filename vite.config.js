@@ -1,19 +1,25 @@
-import path from 'node:path'
 import { defineConfig } from 'vite'
-import VuePlugin from '@vitejs/plugin-vue'
-import UnoCss from 'unocss/vite'
+import { useVitePlugin } from './build/plugin'
+import { getRootPath, getSrcPath } from './build/utils'
+import { ASSETS_DIR, OUTPUT_DIR, PUBLIC_DIR } from './build/config'
 
-const resolve = dir => path.resolve(__dirname, dir)
+export default defineConfig(() => {
+    const rootPath = getRootPath()
+    const srcPath = getSrcPath()
 
-export default defineConfig({
-    build: {
-        outDir: 'dist',
-        assetsDir: 'assets'
-    },
-    plugins: [VuePlugin(), UnoCss()],
-    resolve: {
-        alias: {
-            '@': resolve('src')
+    return {
+        root: rootPath,
+        publicDir: PUBLIC_DIR,
+        build: {
+            outDir: OUTPUT_DIR,
+            assetsDir: ASSETS_DIR
+        },
+        plugins: [useVitePlugin()],
+        resolve: {
+            alias: {
+                '~': rootPath,
+                '@': srcPath
+            }
         }
     }
 })
