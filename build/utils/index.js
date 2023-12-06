@@ -10,10 +10,20 @@ function getRootPath() {
 
 /**
  * @description 获取项目源码存放路径
+ * @param {string} srcDir 源码文件夹, 默认为'src'
  * @returns {string} 源码存放路径
  */
 function getSrcPath(srcDir = 'src') {
     return path.resolve(getRootPath(), srcDir)
+}
+
+/**
+ * @description 获取文件夹绝对路径
+ * @param {...string} dirs 文件夹名称
+ * @returns {string} 文件夹绝对路径
+ */
+function resolve(...dirs) {
+    return path.resolve(getRootPath(), ...dirs)
 }
 
 /**
@@ -38,4 +48,9 @@ function convertEnv(env) {
     return result
 }
 
-export { getRootPath, getSrcPath, convertEnv }
+export {
+    convertEnv,
+    getRootPath,
+    getSrcPath,
+    resolve
+}
