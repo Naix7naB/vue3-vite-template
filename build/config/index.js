@@ -16,4 +16,10 @@ const PROXY_CONFIG = {
     }
 }
 
-export { ASSETS_DIR, ENV_DIR, OUTPUT_DIR, PUBLIC_DIR, PROXY_CONFIG }
+export {
+    ASSETS_DIR,
+    ENV_DIR,
+    OUTPUT_DIR,
+    PROXY_CONFIG,
+    PUBLIC_DIR
+}
